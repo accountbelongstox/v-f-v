@@ -1,0 +1,1201 @@
+├─ next-env.d.ts
+├─ next.config.js
+├─ next.d.ts
+├─ package.json
+├─ scanProject.js
+├─ src
+│   ├─ @core
+│   │   ├─ components
+│   │   │   ├─ auth
+│   │   │   │   ├─ AclGuard.tsx
+│   │   │   │   ├─ AuthGuard.tsx
+│   │   │   │   └─ GuestGuard.tsx
+│   │   │   ├─ card-snippet
+│   │   │   │   ├─ index.tsx
+│   │   │   │   └─ types.ts
+│   │   │   ├─ card-statistics
+│   │   │   │   ├─ card-stats-horizontal
+│   │   │   │   │   └─ index.tsx
+│   │   │   │   ├─ card-stats-horizontal-with-details
+│   │   │   │   │   └─ index.tsx
+│   │   │   │   ├─ card-stats-square
+│   │   │   │   │   └─ index.tsx
+│   │   │   │   ├─ card-stats-vertical
+│   │   │   │   │   └─ index.tsx
+│   │   │   │   ├─ card-stats-with-area-chart
+│   │   │   │   │   └─ index.tsx
+│   │   │   │   └─ types.ts
+│   │   │   ├─ custom-checkbox
+│   │   │   │   ├─ basic
+│   │   │   │   │   └─ index.tsx
+│   │   │   │   ├─ icons
+│   │   │   │   │   └─ index.tsx
+│   │   │   │   ├─ image
+│   │   │   │   │   └─ index.tsx
+│   │   │   │   └─ types.ts
+│   │   │   ├─ custom-radio
+│   │   │   │   ├─ basic
+│   │   │   │   │   └─ index.tsx
+│   │   │   │   ├─ icons
+│   │   │   │   │   └─ index.tsx
+│   │   │   │   ├─ image
+│   │   │   │   │   └─ index.tsx
+│   │   │   │   └─ types.ts
+│   │   │   ├─ customizer
+│   │   │   │   └─ index.tsx
+│   │   │   ├─ icon
+│   │   │   │   └─ index.tsx
+│   │   │   ├─ mui
+│   │   │   │   ├─ autocomplete
+│   │   │   │   │   └─ index.tsx
+│   │   │   │   ├─ avatar
+│   │   │   │   │   ├─ index.tsx
+│   │   │   │   │   └─ types.ts
+│   │   │   │   ├─ badge
+│   │   │   │   │   ├─ index.tsx
+│   │   │   │   │   └─ types.ts
+│   │   │   │   ├─ chip
+│   │   │   │   │   ├─ index.tsx
+│   │   │   │   │   └─ types.ts
+│   │   │   │   ├─ text-field
+│   │   │   │   │   └─ index.tsx
+│   │   │   │   └─ timeline-dot
+│   │   │   │       ├─ index.tsx
+│   │   │   │       └─ types.ts
+│   │   │   ├─ option-menu
+│   │   │   │   ├─ index.tsx
+│   │   │   │   └─ types.ts
+│   │   │   ├─ page-header
+│   │   │   │   ├─ index.tsx
+│   │   │   │   └─ types.ts
+│   │   │   ├─ plan-details
+│   │   │   │   ├─ index.tsx
+│   │   │   │   └─ types.ts
+│   │   │   ├─ react-apexcharts
+│   │   │   │   └─ index.tsx
+│   │   │   ├─ react-draft-wysiwyg
+│   │   │   │   └─ index.tsx
+│   │   │   ├─ repeater
+│   │   │   │   ├─ index.tsx
+│   │   │   │   └─ types.ts
+│   │   │   ├─ scroll-to-top
+│   │   │   │   └─ index.tsx
+│   │   │   ├─ sidebar
+│   │   │   │   ├─ index.tsx
+│   │   │   │   └─ type.ts
+│   │   │   ├─ spinner
+│   │   │   │   └─ index.tsx
+│   │   │   └─ window-wrapper
+│   │   │       └─ index.tsx
+│   │   ├─ context
+│   │   │   └─ settingsContext.tsx
+│   │   ├─ hooks
+│   │   │   ├─ useBgColor.tsx
+│   │   │   ├─ useClipboard.tsx
+│   │   │   └─ useSettings.ts
+│   │   ├─ layouts
+│   │   │   ├─ BlankLayout.tsx
+│   │   │   ├─ BlankLayoutWithAppBar.tsx
+│   │   │   ├─ components
+│   │   │   │   ├─ blank-layout-with-appBar
+│   │   │   │   │   └─ index.tsx
+│   │   │   │   ├─ horizontal
+│   │   │   │   │   ├─ app-bar-content
+│   │   │   │   │   │   └─ index.tsx
+│   │   │   │   │   └─ navigation
+│   │   │   │   │       ├─ HorizontalNavGroup.tsx
+│   │   │   │   │       ├─ HorizontalNavItems.tsx
+│   │   │   │   │       ├─ HorizontalNavLink.tsx
+│   │   │   │   │       └─ index.tsx
+│   │   │   │   ├─ shared-components
+│   │   │   │   │   ├─ footer
+│   │   │   │   │   │   ├─ FooterContent.tsx
+│   │   │   │   │   │   └─ index.tsx
+│   │   │   │   │   ├─ LanguageDropdown.tsx
+│   │   │   │   │   ├─ ModeToggler.tsx
+│   │   │   │   │   ├─ NotificationDropdown.tsx
+│   │   │   │   │   ├─ ShortcutsDropdown.tsx
+│   │   │   │   │   └─ UserDropdown.tsx
+│   │   │   │   └─ vertical
+│   │   │   │       ├─ appBar
+│   │   │   │       │   └─ index.tsx
+│   │   │   │       └─ navigation
+│   │   │   │           ├─ Drawer.tsx
+│   │   │   │           ├─ index.tsx
+│   │   │   │           ├─ VerticalNavGroup.tsx
+│   │   │   │           ├─ VerticalNavHeader.tsx
+│   │   │   │           ├─ VerticalNavItems.tsx
+│   │   │   │           ├─ VerticalNavLink.tsx
+│   │   │   │           └─ VerticalNavSectionTitle.tsx
+│   │   │   ├─ HorizontalLayout.tsx
+│   │   │   ├─ Layout.tsx
+│   │   │   ├─ types.ts
+│   │   │   ├─ utils.ts
+│   │   │   └─ VerticalLayout.tsx
+│   │   ├─ styles
+│   │   │   ├─ libs
+│   │   │   │   ├─ fullcalendar
+│   │   │   │   │   └─ index.ts
+│   │   │   │   ├─ keen-slider
+│   │   │   │   │   └─ index.ts
+│   │   │   │   ├─ react-apexcharts
+│   │   │   │   │   └─ index.ts
+│   │   │   │   ├─ react-cleave
+│   │   │   │   │   └─ index.ts
+│   │   │   │   ├─ react-credit-cards
+│   │   │   │   │   └─ index.ts
+│   │   │   │   ├─ react-datepicker
+│   │   │   │   │   └─ index.ts
+│   │   │   │   ├─ react-draft-wysiwyg
+│   │   │   │   │   └─ index.ts
+│   │   │   │   ├─ react-dropzone
+│   │   │   │   │   └─ index.ts
+│   │   │   │   ├─ react-hot-toast
+│   │   │   │   │   └─ index.ts
+│   │   │   │   └─ recharts
+│   │   │   │       └─ index.ts
+│   │   │   └─ mui
+│   │   │       └─ stepper.ts
+│   │   ├─ theme
+│   │   │   ├─ breakpoints
+│   │   │   │   └─ index.ts
+│   │   │   ├─ globalStyles.ts
+│   │   │   ├─ overrides
+│   │   │   │   ├─ accordion.ts
+│   │   │   │   ├─ alerts.ts
+│   │   │   │   ├─ autocomplete.ts
+│   │   │   │   ├─ avatars.ts
+│   │   │   │   ├─ backdrop.ts
+│   │   │   │   ├─ badge.ts
+│   │   │   │   ├─ breadcrumbs.ts
+│   │   │   │   ├─ button-group.ts
+│   │   │   │   ├─ button.ts
+│   │   │   │   ├─ card.ts
+│   │   │   │   ├─ checkbox.tsx
+│   │   │   │   ├─ chip.ts
+│   │   │   │   ├─ dataGrid.ts
+│   │   │   │   ├─ dialog.ts
+│   │   │   │   ├─ divider.ts
+│   │   │   │   ├─ drawer.ts
+│   │   │   │   ├─ fab.ts
+│   │   │   │   ├─ icon-button.ts
+│   │   │   │   ├─ index.ts
+│   │   │   │   ├─ input.ts
+│   │   │   │   ├─ link.ts
+│   │   │   │   ├─ list.ts
+│   │   │   │   ├─ menu.ts
+│   │   │   │   ├─ pagination.ts
+│   │   │   │   ├─ paper.ts
+│   │   │   │   ├─ popover.ts
+│   │   │   │   ├─ progress.ts
+│   │   │   │   ├─ radio.tsx
+│   │   │   │   ├─ rating.ts
+│   │   │   │   ├─ select.ts
+│   │   │   │   ├─ slider.ts
+│   │   │   │   ├─ snackbar.ts
+│   │   │   │   ├─ switches.ts
+│   │   │   │   ├─ table.ts
+│   │   │   │   ├─ tabs.ts
+│   │   │   │   ├─ timeline.ts
+│   │   │   │   ├─ toggleButton.ts
+│   │   │   │   ├─ tooltip.ts
+│   │   │   │   └─ typography.ts
+│   │   │   ├─ palette
+│   │   │   │   └─ index.ts
+│   │   │   ├─ shadows
+│   │   │   │   └─ index.ts
+│   │   │   ├─ spacing
+│   │   │   │   └─ index.ts
+│   │   │   ├─ ThemeComponent.tsx
+│   │   │   ├─ ThemeOptions.ts
+│   │   │   ├─ types.ts
+│   │   │   └─ typography
+│   │   │       └─ index.ts
+│   │   └─ utils
+│   │       ├─ create-emotion-cache.ts
+│   │       ├─ format.ts
+│   │       ├─ get-daterange.ts
+│   │       ├─ get-initials.ts
+│   │       ├─ hex-to-rgba.ts
+│   │       ├─ is-float.ts
+│   │       ├─ rgba-to-hex.ts
+│   │       └─ types.ts
+│   ├─ @fake-db
+│   │   ├─ app-bar-search
+│   │   │   └─ index.ts
+│   │   ├─ apps
+│   │   │   ├─ calendar.ts
+│   │   │   ├─ chat.ts
+│   │   │   ├─ email.ts
+│   │   │   ├─ invoice.ts
+│   │   │   ├─ permissions.ts
+│   │   │   └─ userList.ts
+│   │   ├─ auth
+│   │   │   └─ jwt.ts
+│   │   ├─ autocomplete
+│   │   │   └─ index.ts
+│   │   ├─ cards
+│   │   │   └─ index.ts
+│   │   ├─ components
+│   │   │   └─ data.ts
+│   │   ├─ iconify-icons
+│   │   │   └─ index.ts
+│   │   ├─ index.ts
+│   │   ├─ mock.ts
+│   │   ├─ pages
+│   │   │   ├─ faq.ts
+│   │   │   ├─ help-center.ts
+│   │   │   ├─ pricing.ts
+│   │   │   └─ profile.ts
+│   │   ├─ server-side-menu
+│   │   │   ├─ horizontal.ts
+│   │   │   └─ vertical.ts
+│   │   ├─ table
+│   │   │   ├─ index.ts
+│   │   │   └─ static-data.ts
+│   │   └─ types.ts
+│   ├─ configs
+│   │   ├─ acl.ts
+│   │   ├─ auth.ts
+│   │   ├─ i18n.ts
+│   │   └─ themeConfig.ts
+│   ├─ context
+│   │   ├─ AuthContext.tsx
+│   │   └─ types.ts
+│   ├─ hooks
+│   │   └─ useAuth.tsx
+│   ├─ iconify-bundle
+│   │   ├─ bundle-icons-react.d.ts
+│   │   ├─ bundle-icons-react.js
+│   │   ├─ bundle-icons-react.ts
+│   │   ├─ icons-bundle-react.js
+│   │   ├─ svg
+│   │   │   └─ logo.svg
+│   │   └─ tsconfig.json
+│   ├─ layouts
+│   │   ├─ components
+│   │   │   ├─ acl
+│   │   │   │   ├─ Can.tsx
+│   │   │   │   ├─ CanViewNavGroup.tsx
+│   │   │   │   ├─ CanViewNavLink.tsx
+│   │   │   │   ├─ CanViewNavSectionTitle.tsx
+│   │   │   │   └─ getHomeRoute.tsx
+│   │   │   ├─ Autocomplete.tsx
+│   │   │   ├─ Direction.tsx
+│   │   │   ├─ horizontal
+│   │   │   │   ├─ AppBarContent.tsx
+│   │   │   │   └─ ServerSideNavItems.tsx
+│   │   │   ├─ Translations.tsx
+│   │   │   ├─ UserIcon.tsx
+│   │   │   └─ vertical
+│   │   │       ├─ AppBarContent.tsx
+│   │   │       └─ ServerSideNavItems.tsx
+│   │   ├─ UserLayout.tsx
+│   │   └─ UserThemeOptions.ts
+│   ├─ navigation
+│   │   ├─ horizontal
+│   │   │   └─ index.ts
+│   │   └─ vertical
+│   │       └─ index.ts
+│   ├─ pages
+│   │   ├─ 401.tsx
+│   │   ├─ 404.tsx
+│   │   ├─ 500.tsx
+│   │   ├─ acl
+│   │   │   └─ index.tsx
+│   │   ├─ apps
+│   │   │   ├─ calendar
+│   │   │   │   └─ index.tsx
+│   │   │   ├─ chat
+│   │   │   │   └─ index.tsx
+│   │   │   ├─ email
+│   │   │   │   ├─ index.tsx
+│   │   │   │   ├─ label
+│   │   │   │   │   └─ [label].tsx
+│   │   │   │   └─ [folder].tsx
+│   │   │   ├─ invoice
+│   │   │   │   ├─ add
+│   │   │   │   │   └─ index.tsx
+│   │   │   │   ├─ edit
+│   │   │   │   │   ├─ index.tsx
+│   │   │   │   │   └─ [id].tsx
+│   │   │   │   ├─ list
+│   │   │   │   │   └─ index.tsx
+│   │   │   │   ├─ preview
+│   │   │   │   │   ├─ index.tsx
+│   │   │   │   │   └─ [id].tsx
+│   │   │   │   └─ print
+│   │   │   │       ├─ index.tsx
+│   │   │   │       └─ [id].tsx
+│   │   │   ├─ permissions
+│   │   │   │   └─ index.tsx
+│   │   │   ├─ roles
+│   │   │   │   └─ index.tsx
+│   │   │   └─ user
+│   │   │       ├─ list
+│   │   │       │   └─ index.tsx
+│   │   │       └─ view
+│   │   │           └─ [tab].tsx
+│   │   ├─ charts
+│   │   │   ├─ apex-charts
+│   │   │   │   └─ index.tsx
+│   │   │   ├─ chartjs
+│   │   │   │   └─ index.tsx
+│   │   │   └─ recharts
+│   │   │       └─ index.tsx
+│   │   ├─ components
+│   │   │   ├─ accordion
+│   │   │   │   └─ index.tsx
+│   │   │   ├─ alerts
+│   │   │   │   └─ index.tsx
+│   │   │   ├─ avatars
+│   │   │   │   └─ index.tsx
+│   │   │   ├─ badges
+│   │   │   │   └─ index.tsx
+│   │   │   ├─ button-group
+│   │   │   │   └─ index.tsx
+│   │   │   ├─ buttons
+│   │   │   │   └─ index.tsx
+│   │   │   ├─ chips
+│   │   │   │   └─ index.tsx
+│   │   │   ├─ dialogs
+│   │   │   │   └─ index.tsx
+│   │   │   ├─ list
+│   │   │   │   └─ index.tsx
+│   │   │   ├─ menu
+│   │   │   │   └─ index.tsx
+│   │   │   ├─ more
+│   │   │   │   └─ index.tsx
+│   │   │   ├─ pagination
+│   │   │   │   └─ index.tsx
+│   │   │   ├─ progress
+│   │   │   │   └─ index.tsx
+│   │   │   ├─ ratings
+│   │   │   │   └─ index.tsx
+│   │   │   ├─ snackbar
+│   │   │   │   └─ index.tsx
+│   │   │   ├─ swiper
+│   │   │   │   └─ index.tsx
+│   │   │   ├─ tabs
+│   │   │   │   └─ index.tsx
+│   │   │   ├─ timeline
+│   │   │   │   └─ index.tsx
+│   │   │   ├─ toast
+│   │   │   │   └─ index.tsx
+│   │   │   └─ tree-view
+│   │   │       └─ index.tsx
+│   │   ├─ dashboards
+│   │   │   ├─ analytics
+│   │   │   │   └─ index.tsx
+│   │   │   ├─ crm
+│   │   │   │   └─ index.tsx
+│   │   │   ├─ ecommerce
+│   │   │   │   └─ index.tsx
+│   │   │   └─ mui-test
+│   │   ├─ forgot-password
+│   │   │   └─ index.tsx
+│   │   ├─ forms
+│   │   │   ├─ form-elements
+│   │   │   │   ├─ autocomplete
+│   │   │   │   │   └─ index.tsx
+│   │   │   │   ├─ checkbox
+│   │   │   │   │   └─ index.tsx
+│   │   │   │   ├─ custom-inputs
+│   │   │   │   │   └─ index.tsx
+│   │   │   │   ├─ editor
+│   │   │   │   │   └─ index.tsx
+│   │   │   │   ├─ file-uploader
+│   │   │   │   │   └─ index.tsx
+│   │   │   │   ├─ input-mask
+│   │   │   │   │   └─ index.tsx
+│   │   │   │   ├─ pickers
+│   │   │   │   │   └─ index.tsx
+│   │   │   │   ├─ radio
+│   │   │   │   │   └─ index.tsx
+│   │   │   │   ├─ select
+│   │   │   │   │   └─ index.tsx
+│   │   │   │   ├─ slider
+│   │   │   │   │   └─ index.tsx
+│   │   │   │   ├─ switch
+│   │   │   │   │   └─ index.tsx
+│   │   │   │   ├─ text-field
+│   │   │   │   │   └─ index.tsx
+│   │   │   │   └─ textarea
+│   │   │   │       └─ index.tsx
+│   │   │   ├─ form-layouts
+│   │   │   │   └─ index.tsx
+│   │   │   ├─ form-validation
+│   │   │   │   └─ index.tsx
+│   │   │   └─ form-wizard
+│   │   │       └─ index.tsx
+│   │   ├─ index.tsx
+│   │   ├─ login
+│   │   │   └─ index.tsx
+│   │   ├─ pages
+│   │   │   ├─ account-settings
+│   │   │   │   └─ [tab].tsx
+│   │   │   ├─ auth
+│   │   │   │   ├─ forgot-password-v1
+│   │   │   │   │   └─ index.tsx
+│   │   │   │   ├─ forgot-password-v2
+│   │   │   │   │   └─ index.tsx
+│   │   │   │   ├─ login-v1
+│   │   │   │   │   └─ index.tsx
+│   │   │   │   ├─ login-v2
+│   │   │   │   │   └─ index.tsx
+│   │   │   │   ├─ login-with-appbar
+│   │   │   │   │   └─ index.tsx
+│   │   │   │   ├─ register-multi-steps
+│   │   │   │   │   └─ index.tsx
+│   │   │   │   ├─ register-v1
+│   │   │   │   │   └─ index.tsx
+│   │   │   │   ├─ register-v2
+│   │   │   │   │   └─ index.tsx
+│   │   │   │   ├─ reset-password-v1
+│   │   │   │   │   └─ index.tsx
+│   │   │   │   ├─ reset-password-v2
+│   │   │   │   │   └─ index.tsx
+│   │   │   │   ├─ two-steps-v1
+│   │   │   │   │   └─ index.tsx
+│   │   │   │   ├─ two-steps-v2
+│   │   │   │   │   └─ index.tsx
+│   │   │   │   ├─ verify-email-v1
+│   │   │   │   │   └─ index.tsx
+│   │   │   │   └─ verify-email-v2
+│   │   │   │       └─ index.tsx
+│   │   │   ├─ dialog-examples
+│   │   │   │   └─ index.tsx
+│   │   │   ├─ faq
+│   │   │   │   └─ index.tsx
+│   │   │   ├─ help-center
+│   │   │   │   ├─ index.tsx
+│   │   │   │   └─ [category]
+│   │   │   │       └─ [subcategory]
+│   │   │   │           ├─ index.tsx
+│   │   │   │           └─ [article].tsx
+│   │   │   ├─ misc
+│   │   │   │   ├─ 401-not-authorized
+│   │   │   │   │   └─ index.tsx
+│   │   │   │   ├─ 404-not-found
+│   │   │   │   │   └─ index.tsx
+│   │   │   │   ├─ 500-server-error
+│   │   │   │   │   └─ index.tsx
+│   │   │   │   ├─ coming-soon
+│   │   │   │   │   └─ index.tsx
+│   │   │   │   └─ under-maintenance
+│   │   │   │       └─ index.tsx
+│   │   │   ├─ pricing
+│   │   │   │   └─ index.tsx
+│   │   │   ├─ user-profile
+│   │   │   │   └─ [tab].tsx
+│   │   │   └─ wizard-examples
+│   │   │       ├─ checkout
+│   │   │       │   └─ index.tsx
+│   │   │       ├─ create-deal
+│   │   │       │   └─ index.tsx
+│   │   │       └─ property-listing
+│   │   │           └─ index.tsx
+│   │   ├─ register
+│   │   │   └─ index.tsx
+│   │   ├─ tables
+│   │   │   ├─ data-grid
+│   │   │   │   └─ index.tsx
+│   │   │   └─ mui
+│   │   │       └─ index.tsx
+│   │   ├─ ui
+│   │   │   ├─ cards
+│   │   │   │   ├─ actions
+│   │   │   │   │   └─ index.tsx
+│   │   │   │   ├─ advanced
+│   │   │   │   │   └─ index.tsx
+│   │   │   │   ├─ basic
+│   │   │   │   │   └─ index.tsx
+│   │   │   │   ├─ statistics
+│   │   │   │   │   └─ index.tsx
+│   │   │   │   └─ widgets
+│   │   │   │       └─ index.tsx
+│   │   │   ├─ icons
+│   │   │   │   └─ index.tsx
+│   │   │   └─ typography
+│   │   │       └─ index.tsx
+│   │   ├─ _app.tsx
+│   │   └─ _document.tsx
+│   ├─ store
+│   │   ├─ apps
+│   │   │   ├─ calendar
+│   │   │   │   └─ index.ts
+│   │   │   ├─ chat
+│   │   │   │   └─ index.ts
+│   │   │   ├─ email
+│   │   │   │   └─ index.ts
+│   │   │   ├─ invoice
+│   │   │   │   └─ index.ts
+│   │   │   ├─ permissions
+│   │   │   │   └─ index.ts
+│   │   │   └─ user
+│   │   │       └─ index.ts
+│   │   └─ index.ts
+│   ├─ types
+│   │   ├─ apps
+│   │   │   ├─ calendarTypes.ts
+│   │   │   ├─ chatTypes.ts
+│   │   │   ├─ emailTypes.ts
+│   │   │   ├─ invoiceTypes.ts
+│   │   │   ├─ permissionTypes.ts
+│   │   │   └─ userTypes.ts
+│   │   └─ forms
+│   │       └─ reactDatepickerTypes.ts
+│   └─ views
+│       ├─ apps
+│       │   ├─ calendar
+│       │   │   ├─ AddEventSidebar.tsx
+│       │   │   ├─ Calendar.tsx
+│       │   │   └─ SidebarLeft.tsx
+│       │   ├─ chat
+│       │   │   ├─ ChatContent.tsx
+│       │   │   ├─ ChatLog.tsx
+│       │   │   ├─ SendMsgForm.tsx
+│       │   │   ├─ SidebarLeft.tsx
+│       │   │   ├─ UserProfileLeft.tsx
+│       │   │   └─ UserProfileRight.tsx
+│       │   ├─ email
+│       │   │   ├─ ComposePopup.tsx
+│       │   │   ├─ Email.tsx
+│       │   │   ├─ MailDetails.tsx
+│       │   │   ├─ MailLog.tsx
+│       │   │   └─ SidebarLeft.tsx
+│       │   ├─ invoice
+│       │   │   ├─ add
+│       │   │   │   ├─ AddActions.tsx
+│       │   │   │   ├─ AddCard.tsx
+│       │   │   │   └─ AddNewCustomer.tsx
+│       │   │   ├─ edit
+│       │   │   │   ├─ Edit.tsx
+│       │   │   │   ├─ EditActions.tsx
+│       │   │   │   └─ EditCard.tsx
+│       │   │   ├─ list
+│       │   │   │   └─ TableHeader.tsx
+│       │   │   ├─ preview
+│       │   │   │   ├─ Preview.tsx
+│       │   │   │   ├─ PreviewActions.tsx
+│       │   │   │   └─ PreviewCard.tsx
+│       │   │   ├─ print
+│       │   │   │   └─ PrintPage.tsx
+│       │   │   └─ shared-drawer
+│       │   │       ├─ AddPaymentDrawer.tsx
+│       │   │       └─ SendInvoiceDrawer.tsx
+│       │   ├─ permissions
+│       │   │   └─ TableHeader.tsx
+│       │   ├─ roles
+│       │   │   ├─ RoleCards.tsx
+│       │   │   ├─ Table.tsx
+│       │   │   └─ TableHeader.tsx
+│       │   └─ user
+│       │       ├─ list
+│       │       │   ├─ AddUserDrawer.tsx
+│       │       │   └─ TableHeader.tsx
+│       │       └─ view
+│       │           ├─ UsersInvoiceListTable.tsx
+│       │           ├─ UsersProjectListTable.tsx
+│       │           ├─ UserSubscriptionDialog.tsx
+│       │           ├─ UserSuspendDialog.tsx
+│       │           ├─ UserViewAccount.tsx
+│       │           ├─ UserViewBilling.tsx
+│       │           ├─ UserViewConnection.tsx
+│       │           ├─ UserViewLeft.tsx
+│       │           ├─ UserViewNotification.tsx
+│       │           ├─ UserViewPage.tsx
+│       │           ├─ UserViewRight.tsx
+│       │           └─ UserViewSecurity.tsx
+│       ├─ charts
+│       │   ├─ apex-charts
+│       │   │   ├─ ApexAreaChart.tsx
+│       │   │   ├─ ApexBarChart.tsx
+│       │   │   ├─ ApexCandlestickChart.tsx
+│       │   │   ├─ ApexColumnChart.tsx
+│       │   │   ├─ ApexDonutChart.tsx
+│       │   │   ├─ ApexHeatmapChart.tsx
+│       │   │   ├─ ApexLineChart.tsx
+│       │   │   ├─ ApexRadarChart.tsx
+│       │   │   ├─ ApexRadialBarChart.tsx
+│       │   │   └─ ApexScatterChart.tsx
+│       │   ├─ chartjs
+│       │   │   ├─ ChartjsAreaChart.tsx
+│       │   │   ├─ ChartjsBarChart.tsx
+│       │   │   ├─ ChartjsBubbleChart.tsx
+│       │   │   ├─ ChartjsHorizontalBarChart.tsx
+│       │   │   ├─ ChartjsLineChart.tsx
+│       │   │   ├─ ChartjsPolarAreaChart.tsx
+│       │   │   ├─ ChartjsRadarChart.tsx
+│       │   │   └─ ChartjsScatterChart.tsx
+│       │   └─ recharts
+│       │       ├─ RechartsAreaChart.tsx
+│       │       ├─ RechartsBarChart.tsx
+│       │       ├─ RechartsLineChart.tsx
+│       │       ├─ RechartsPieChart.tsx
+│       │       ├─ RechartsRadarChart.tsx
+│       │       └─ RechartsScatterChart.tsx
+│       ├─ components
+│       │   ├─ accordion
+│       │   │   ├─ AccordionActions.tsx
+│       │   │   ├─ AccordionControlled.tsx
+│       │   │   ├─ AccordionCustomized.tsx
+│       │   │   ├─ AccordionSimple.tsx
+│       │   │   └─ AccordionSourceCode.tsx
+│       │   ├─ alerts
+│       │   │   ├─ AlertsActions.tsx
+│       │   │   ├─ AlertsBasic.tsx
+│       │   │   ├─ AlertsDescription.tsx
+│       │   │   ├─ AlertsDismissible.tsx
+│       │   │   ├─ AlertsFilled.tsx
+│       │   │   ├─ AlertsOutlined.tsx
+│       │   │   └─ AlertsSourceCode.tsx
+│       │   ├─ avatars
+│       │   │   ├─ AvatarsGrouped.tsx
+│       │   │   ├─ AvatarsGroupedPullUp.tsx
+│       │   │   ├─ AvatarsGroupedPullUpWithTooltip.tsx
+│       │   │   ├─ AvatarsIcon.tsx
+│       │   │   ├─ AvatarsImage.tsx
+│       │   │   ├─ AvatarsLetter.tsx
+│       │   │   ├─ AvatarsSizes.tsx
+│       │   │   ├─ AvatarsSourceCode.tsx
+│       │   │   ├─ AvatarsVariants.tsx
+│       │   │   └─ AvatarsWithBadge.tsx
+│       │   ├─ badges
+│       │   │   ├─ BadgesAlignment.tsx
+│       │   │   ├─ BadgesBasic.tsx
+│       │   │   ├─ BadgesDot.tsx
+│       │   │   ├─ BadgesLight.tsx
+│       │   │   ├─ BadgesMaxValue.tsx
+│       │   │   ├─ BadgesOverlap.tsx
+│       │   │   ├─ BadgesSourceCode.tsx
+│       │   │   └─ BadgesVisibility.tsx
+│       │   ├─ button-group
+│       │   │   ├─ ButtonGroupBasic.tsx
+│       │   │   ├─ ButtonGroupColors.tsx
+│       │   │   ├─ ButtonGroupSizes.tsx
+│       │   │   ├─ ButtonGroupSourceCode.tsx
+│       │   │   ├─ ButtonGroupSplit.tsx
+│       │   │   ├─ ButtonGroupVertical.tsx
+│       │   │   ├─ ButtonToggleColors.tsx
+│       │   │   ├─ ButtonToggleCustomized.tsx
+│       │   │   ├─ ButtonToggleEnforceValue.tsx
+│       │   │   ├─ ButtonToggleMultiple.tsx
+│       │   │   ├─ ButtonToggleSimple.tsx
+│       │   │   ├─ ButtonToggleSizes.tsx
+│       │   │   └─ ButtonToggleVertical.tsx
+│       │   ├─ buttons
+│       │   │   ├─ ButtonsColors.tsx
+│       │   │   ├─ ButtonsContained.tsx
+│       │   │   ├─ ButtonsCustomized.tsx
+│       │   │   ├─ ButtonsFab.tsx
+│       │   │   ├─ ButtonsFabSizes.tsx
+│       │   │   ├─ ButtonsIcons.tsx
+│       │   │   ├─ ButtonsOutlined.tsx
+│       │   │   ├─ ButtonsSizes.tsx
+│       │   │   ├─ ButtonsSourceCode.tsx
+│       │   │   ├─ ButtonsText.tsx
+│       │   │   ├─ ButtonsTonal.tsx
+│       │   │   └─ ButtonsWithIconAndLabel.tsx
+│       │   ├─ chips
+│       │   │   ├─ ChipsArray.tsx
+│       │   │   ├─ ChipsAvatar.tsx
+│       │   │   ├─ ChipsClickable.tsx
+│       │   │   ├─ ChipsColors.tsx
+│       │   │   ├─ ChipsDisabled.tsx
+│       │   │   ├─ ChipsIcon.tsx
+│       │   │   ├─ ChipsLight.tsx
+│       │   │   ├─ ChipsOnDelete.tsx
+│       │   │   ├─ ChipsRounded.tsx
+│       │   │   ├─ ChipsSizes.tsx
+│       │   │   ├─ ChipsSourceCode.tsx
+│       │   │   └─ ChipsVariants.tsx
+│       │   ├─ dialogs
+│       │   │   ├─ DialogAlert.tsx
+│       │   │   ├─ DialogConfirmation.tsx
+│       │   │   ├─ DialogCustomized.tsx
+│       │   │   ├─ DialogForm.tsx
+│       │   │   ├─ DialogFullScreen.tsx
+│       │   │   ├─ DialogRespoFullScreen.tsx
+│       │   │   ├─ DialogSimple.tsx
+│       │   │   ├─ DialogSizes.tsx
+│       │   │   ├─ DialogSourceCode.tsx
+│       │   │   ├─ DialogsScroll.tsx
+│       │   │   └─ DialogTransition.tsx
+│       │   ├─ list
+│       │   │   ├─ ListDense.tsx
+│       │   │   ├─ ListItemSelected.tsx
+│       │   │   ├─ ListNested.tsx
+│       │   │   ├─ ListProgress.tsx
+│       │   │   ├─ ListSecondary.tsx
+│       │   │   ├─ ListSimple.tsx
+│       │   │   ├─ ListSourceCode.tsx
+│       │   │   ├─ ListStickySubheader.tsx
+│       │   │   ├─ ListUsers.tsx
+│       │   │   ├─ ListWithCheckbox.tsx
+│       │   │   └─ ListWithSwitch.tsx
+│       │   ├─ menu
+│       │   │   ├─ MenuBasic.tsx
+│       │   │   ├─ MenuComposition.tsx
+│       │   │   ├─ MenuContext.tsx
+│       │   │   ├─ MenuCustomized.tsx
+│       │   │   ├─ MenuMaxHeight.tsx
+│       │   │   ├─ MenuSelected.tsx
+│       │   │   ├─ MenuSourceCode.tsx
+│       │   │   └─ MenuTransition.tsx
+│       │   ├─ pagination
+│       │   │   ├─ PaginationButtons.tsx
+│       │   │   ├─ PaginationControlled.tsx
+│       │   │   ├─ PaginationDisabled.tsx
+│       │   │   ├─ PaginationOutlined.tsx
+│       │   │   ├─ PaginationRanges.tsx
+│       │   │   ├─ PaginationRounded.tsx
+│       │   │   ├─ PaginationSimple.tsx
+│       │   │   ├─ PaginationSizes.tsx
+│       │   │   └─ PaginationSourceCode.tsx
+│       │   ├─ progress
+│       │   │   ├─ ProgressCircularColors.tsx
+│       │   │   ├─ ProgressCircularControlledUncontrolled.tsx
+│       │   │   ├─ ProgressCircularCustomization.tsx
+│       │   │   ├─ ProgressCircularIndeterminate.tsx
+│       │   │   ├─ ProgressCircularWithLabel.tsx
+│       │   │   ├─ ProgressLinearBuffer.tsx
+│       │   │   ├─ ProgressLinearColors.tsx
+│       │   │   ├─ ProgressLinearControlledUncontrolled.tsx
+│       │   │   ├─ ProgressLinearCustomization.tsx
+│       │   │   ├─ ProgressLinearIndeterminate.tsx
+│       │   │   ├─ ProgressLinearWithLabel.tsx
+│       │   │   └─ ProgressSourceCode.tsx
+│       │   ├─ ratings
+│       │   │   ├─ RatingsBasic.tsx
+│       │   │   ├─ RatingsCustomized.tsx
+│       │   │   ├─ RatingsHalf.tsx
+│       │   │   ├─ RatingsHoverFeedback.tsx
+│       │   │   ├─ RatingsSizes.tsx
+│       │   │   └─ RatingsSourceCode.tsx
+│       │   ├─ snackbar
+│       │   │   ├─ SnackbarAlert.tsx
+│       │   │   ├─ SnackbarConsecutive.tsx
+│       │   │   ├─ SnackbarControlSlideDirection.tsx
+│       │   │   ├─ SnackbarPositioned.tsx
+│       │   │   ├─ SnackbarSimple.tsx
+│       │   │   ├─ SnackbarSourceCode.tsx
+│       │   │   └─ SnackbarTransition.tsx
+│       │   ├─ swiper
+│       │   │   ├─ SwiperAutoSwitch.tsx
+│       │   │   ├─ SwiperCentered.tsx
+│       │   │   ├─ SwiperControls.tsx
+│       │   │   ├─ SwiperDefault.tsx
+│       │   │   ├─ SwiperFader.tsx
+│       │   │   ├─ SwiperFreeMode.tsx
+│       │   │   ├─ SwiperLoop.tsx
+│       │   │   ├─ SwiperMultipleSlides.tsx
+│       │   │   ├─ SwiperMutationObserver.tsx
+│       │   │   ├─ SwiperSourceCode.tsx
+│       │   │   ├─ SwiperSpacing.tsx
+│       │   │   ├─ SwiperThumbnails.tsx
+│       │   │   ├─ SwiperVertical.tsx
+│       │   │   └─ SwiperZoom.tsx
+│       │   ├─ tabs
+│       │   │   ├─ TabsCentered.tsx
+│       │   │   ├─ TabsColor.tsx
+│       │   │   ├─ TabsCustomized.tsx
+│       │   │   ├─ TabsCustomizedVertical.tsx
+│       │   │   ├─ TabsForcedScroll.tsx
+│       │   │   ├─ TabsFullWidth.tsx
+│       │   │   ├─ TabsIcon.tsx
+│       │   │   ├─ TabsNav.tsx
+│       │   │   ├─ TabsSimple.tsx
+│       │   │   ├─ TabsSourceCode.tsx
+│       │   │   └─ TabsVertical.tsx
+│       │   ├─ timeline
+│       │   │   ├─ TimelineCenter.tsx
+│       │   │   ├─ TimelineFilled.tsx
+│       │   │   ├─ TimelineOutlined.tsx
+│       │   │   └─ TimelineSourceCode.tsx
+│       │   ├─ toast
+│       │   │   ├─ ToastBlank.tsx
+│       │   │   ├─ ToastCustom.tsx
+│       │   │   ├─ ToastCustomPosition.tsx
+│       │   │   ├─ ToastEmoji.tsx
+│       │   │   ├─ ToastError.tsx
+│       │   │   ├─ ToastMultiLine.tsx
+│       │   │   ├─ ToastPromise.tsx
+│       │   │   ├─ ToastSourceCode.tsx
+│       │   │   ├─ ToastSuccess.tsx
+│       │   │   └─ ToastThemed.tsx
+│       │   └─ tree-view
+│       │       ├─ TreeViewBasic.tsx
+│       │       ├─ TreeViewControlled.tsx
+│       │       ├─ TreeViewCustomized.tsx
+│       │       ├─ TreeViewGmailClone.tsx
+│       │       ├─ TreeViewMultiSelection.tsx
+│       │       ├─ TreeViewRichObject.tsx
+│       │       └─ TreeViewSourceCode.tsx
+│       ├─ dashboards
+│       │   ├─ analytics
+│       │   │   ├─ AnalyticsEarningReports.tsx
+│       │   │   ├─ AnalyticsMonthlyCampaignState.tsx
+│       │   │   ├─ AnalyticsOrderVisits.tsx
+│       │   │   ├─ AnalyticsProject.tsx
+│       │   │   ├─ AnalyticsSalesByCountries.tsx
+│       │   │   ├─ AnalyticsSourceVisits.tsx
+│       │   │   ├─ AnalyticsSupportTracker.tsx
+│       │   │   ├─ AnalyticsTotalEarning.tsx
+│       │   │   └─ AnalyticsWebsiteAnalyticsSlider.tsx
+│       │   ├─ crm
+│       │   │   ├─ CrmActiveProjects.tsx
+│       │   │   ├─ CrmActivityTimeline.tsx
+│       │   │   ├─ CrmBrowserStates.tsx
+│       │   │   ├─ CrmEarningReportsWithTabs.tsx
+│       │   │   ├─ CrmLastTransaction.tsx
+│       │   │   ├─ CrmProjectStatus.tsx
+│       │   │   ├─ CrmRevenueGrowth.tsx
+│       │   │   ├─ CrmSalesWithAreaChart.tsx
+│       │   │   ├─ CrmSalesWithRadarChart.tsx
+│       │   │   └─ CrmSessions.tsx
+│       │   └─ ecommerce
+│       │       ├─ EcommerceCongratulationsJohn.tsx
+│       │       ├─ EcommerceEarningReports.tsx
+│       │       ├─ EcommerceExpenses.tsx
+│       │       ├─ EcommerceGeneratedLeads.tsx
+│       │       ├─ EcommerceInvoiceTable.tsx
+│       │       ├─ EcommerceOrders.tsx
+│       │       ├─ EcommercePopularProducts.tsx
+│       │       ├─ EcommerceProfit.tsx
+│       │       ├─ EcommerceRevenueReport.tsx
+│       │       ├─ EcommerceStatistics.tsx
+│       │       └─ EcommerceTransactions.tsx
+│       ├─ forms
+│       │   ├─ form-elements
+│       │   │   ├─ autocomplete
+│       │   │   │   ├─ AutocompleteAsynchronousRequest.tsx
+│       │   │   │   ├─ AutocompleteCheckboxes.tsx
+│       │   │   │   ├─ AutocompleteControlledUncontrolled.tsx
+│       │   │   │   ├─ AutocompleteCountry.tsx
+│       │   │   │   ├─ AutocompleteCreatable.tsx
+│       │   │   │   ├─ AutocompleteCustom.tsx
+│       │   │   │   ├─ AutocompleteCustomFilter.tsx
+│       │   │   │   ├─ AutocompleteCustomInput.tsx
+│       │   │   │   ├─ AutocompleteDisabledOptions.tsx
+│       │   │   │   ├─ AutocompleteFixedOptions.tsx
+│       │   │   │   ├─ AutocompleteFreeSolo.tsx
+│       │   │   │   ├─ AutocompleteGrouped.tsx
+│       │   │   │   ├─ AutocompleteLimitTags.tsx
+│       │   │   │   ├─ AutocompleteMediumSize.tsx
+│       │   │   │   ├─ AutocompleteMultipleValues.tsx
+│       │   │   │   ├─ AutocompleteProps.tsx
+│       │   │   │   ├─ AutocompleteSourceCode.tsx
+│       │   │   │   └─ AutocompleteVariants.tsx
+│       │   │   ├─ checkbox
+│       │   │   │   ├─ CheckboxesBasic.tsx
+│       │   │   │   ├─ CheckboxesColors.tsx
+│       │   │   │   ├─ CheckboxesControlledUncontrolled.tsx
+│       │   │   │   ├─ CheckboxesCustomIcons.tsx
+│       │   │   │   ├─ CheckboxesCustomized.tsx
+│       │   │   │   ├─ CheckboxesLabelPlacement.tsx
+│       │   │   │   ├─ CheckboxesShowError.tsx
+│       │   │   │   ├─ CheckboxesSizes.tsx
+│       │   │   │   └─ CheckboxesSourceCode.tsx
+│       │   │   ├─ custom-inputs
+│       │   │   │   ├─ CustomCheckboxBasic.tsx
+│       │   │   │   ├─ CustomCheckboxIcons.tsx
+│       │   │   │   ├─ CustomCheckboxImg.tsx
+│       │   │   │   ├─ CustomInputsSourceCode.tsx
+│       │   │   │   ├─ CustomRadioBasic.tsx
+│       │   │   │   ├─ CustomRadioIcons.tsx
+│       │   │   │   └─ CustomRadioImg.tsx
+│       │   │   ├─ editor
+│       │   │   │   ├─ EditorControlled.tsx
+│       │   │   │   ├─ EditorSourceCode.tsx
+│       │   │   │   └─ EditorUncontrolled.tsx
+│       │   │   ├─ file-uploader
+│       │   │   │   ├─ FileUploaderMultiple.tsx
+│       │   │   │   ├─ FileUploaderRestrictions.tsx
+│       │   │   │   ├─ FileUploaderSingle.tsx
+│       │   │   │   └─ FileUploaderSourceCode.tsx
+│       │   │   ├─ input-mask
+│       │   │   │   ├─ InputMaskExamples.tsx
+│       │   │   │   └─ InputMaskSourceCode.tsx
+│       │   │   ├─ pickers
+│       │   │   │   ├─ PickersBasic.tsx
+│       │   │   │   ├─ PickersCallbacks.tsx
+│       │   │   │   ├─ PickersCustomInput.tsx
+│       │   │   │   ├─ PickersCustomization.tsx
+│       │   │   │   ├─ PickersIncludeExclude.tsx
+│       │   │   │   ├─ PickersLocale.tsx
+│       │   │   │   ├─ PickersMinMax.tsx
+│       │   │   │   ├─ PickersMonthYearDropdowns.tsx
+│       │   │   │   ├─ PickersMonthYearQuarter.tsx
+│       │   │   │   ├─ PickersOptions.tsx
+│       │   │   │   ├─ PickersRange.tsx
+│       │   │   │   ├─ PickersSourceCode.tsx
+│       │   │   │   ├─ PickersSpecificRange.tsx
+│       │   │   │   └─ PickersTime.tsx
+│       │   │   ├─ radio
+│       │   │   │   ├─ RadioColor.tsx
+│       │   │   │   ├─ RadioControlledUncontrolled.tsx
+│       │   │   │   ├─ RadioCustomized.tsx
+│       │   │   │   ├─ RadioGroup.tsx
+│       │   │   │   ├─ RadioLabelPlacement.tsx
+│       │   │   │   ├─ RadioShowError.tsx
+│       │   │   │   ├─ RadioSizes.tsx
+│       │   │   │   ├─ RadioSourceCode.tsx
+│       │   │   │   └─ RadioStandalone.tsx
+│       │   │   ├─ select
+│       │   │   │   ├─ SelectControlledUncontrolled.tsx
+│       │   │   │   ├─ SelectCustom.tsx
+│       │   │   │   ├─ SelectGrouping.tsx
+│       │   │   │   ├─ SelectMultiple.tsx
+│       │   │   │   ├─ SelectNative.tsx
+│       │   │   │   ├─ SelectProps.tsx
+│       │   │   │   ├─ SelectSizes.tsx
+│       │   │   │   ├─ SelectSourceCode.tsx
+│       │   │   │   ├─ SelectVariants.tsx
+│       │   │   │   └─ SelectWithDialog.tsx
+│       │   │   ├─ slider
+│       │   │   │   ├─ SliderBasic.tsx
+│       │   │   │   ├─ SliderColors.tsx
+│       │   │   │   ├─ SliderControlledUncontrolled.tsx
+│       │   │   │   ├─ SliderCustomColors.tsx
+│       │   │   │   ├─ SliderCustomized.tsx
+│       │   │   │   ├─ SliderCustomMarks.tsx
+│       │   │   │   ├─ SliderDiscrete.tsx
+│       │   │   │   ├─ SliderInvertedTrack.tsx
+│       │   │   │   ├─ SliderLabelAlwaysVisible.tsx
+│       │   │   │   ├─ SliderMinimumDistance.tsx
+│       │   │   │   ├─ SliderRange.tsx
+│       │   │   │   ├─ SliderRemovedTrack.tsx
+│       │   │   │   ├─ SliderRestrictedValues.tsx
+│       │   │   │   ├─ SliderSizes.tsx
+│       │   │   │   ├─ SliderSmallSteps.tsx
+│       │   │   │   ├─ SliderSourceCode.tsx
+│       │   │   │   └─ SliderVertical.tsx
+│       │   │   ├─ switch
+│       │   │   │   ├─ SwitchesBasic.tsx
+│       │   │   │   ├─ SwitchesColors.tsx
+│       │   │   │   ├─ SwitchesControlledUncontrolled.tsx
+│       │   │   │   ├─ SwitchesCustomized.tsx
+│       │   │   │   ├─ SwitchesLabelPlacement.tsx
+│       │   │   │   ├─ SwitchesSizes.tsx
+│       │   │   │   ├─ SwitchesSourceCode.tsx
+│       │   │   │   └─ SwitchesStandalone.tsx
+│       │   │   ├─ text-field
+│       │   │   │   ├─ TextFieldColor.tsx
+│       │   │   │   ├─ TextFieldControlledUncontrolled.tsx
+│       │   │   │   ├─ TextFieldCustom.tsx
+│       │   │   │   ├─ TextFieldFormProps.tsx
+│       │   │   │   ├─ TextFieldIcons.tsx
+│       │   │   │   ├─ TextFieldInputAdornment.tsx
+│       │   │   │   ├─ TextFieldLayout.tsx
+│       │   │   │   ├─ TextFieldSizes.tsx
+│       │   │   │   ├─ TextFieldSourceCode.tsx
+│       │   │   │   ├─ TextFieldValidation.tsx
+│       │   │   │   └─ TextFieldVariant.tsx
+│       │   │   └─ textarea
+│       │   │       ├─ TextareaCustom.tsx
+│       │   │       ├─ TextareaSourceCode.tsx
+│       │   │       └─ TextareaVariant.tsx
+│       │   ├─ form-layouts
+│       │   │   ├─ FormLayoutsAlignment.tsx
+│       │   │   ├─ FormLayoutsBasic.tsx
+│       │   │   ├─ FormLayoutsCollapsible.tsx
+│       │   │   ├─ FormLayoutsIcons.tsx
+│       │   │   ├─ FormLayoutsSeparator.tsx
+│       │   │   └─ FormLayoutsTabs.tsx
+│       │   ├─ form-validation
+│       │   │   ├─ FormValidationAsync.tsx
+│       │   │   ├─ FormValidationBasic.tsx
+│       │   │   └─ FormValidationSchema.tsx
+│       │   └─ form-wizard
+│       │       ├─ StepperAlternativeLabel.tsx
+│       │       ├─ StepperCustomDot.tsx
+│       │       ├─ StepperCustomHorizontal.tsx
+│       │       ├─ StepperCustomVertical.tsx
+│       │       ├─ StepperLinearWithValidation.tsx
+│       │       ├─ StepperVerticalWithNumbers.tsx
+│       │       └─ StepperVerticalWithoutNumbers.tsx
+│       ├─ pages
+│       │   ├─ account-settings
+│       │   │   ├─ AccountSettings.tsx
+│       │   │   ├─ billing
+│       │   │   │   ├─ BillingAddressCard.tsx
+│       │   │   │   ├─ BillingHistoryTable.tsx
+│       │   │   │   ├─ CurrentPlanCard.tsx
+│       │   │   │   └─ PaymentMethodCard.tsx
+│       │   │   ├─ security
+│       │   │   │   ├─ ChangePasswordCard.tsx
+│       │   │   │   ├─ CreateApiKey.tsx
+│       │   │   │   └─ TwoFactorAuthentication.tsx
+│       │   │   ├─ TabAccount.tsx
+│       │   │   ├─ TabBilling.tsx
+│       │   │   ├─ TabConnections.tsx
+│       │   │   ├─ TabNotifications.tsx
+│       │   │   └─ TabSecurity.tsx
+│       │   ├─ auth
+│       │   │   ├─ AuthIllustrationV1Wrapper.tsx
+│       │   │   ├─ FooterIllustrationsV2.tsx
+│       │   │   └─ register-multi-steps
+│       │   │       ├─ index.tsx
+│       │   │       ├─ StepAccountDetails.tsx
+│       │   │       ├─ StepBillingDetails.tsx
+│       │   │       └─ StepPersonalInfo.tsx
+│       │   ├─ dialog-examples
+│       │   │   ├─ create-app-tabs
+│       │   │   │   ├─ DialogTabBilling.tsx
+│       │   │   │   ├─ DialogTabDatabase.tsx
+│       │   │   │   ├─ DialogTabDetails.tsx
+│       │   │   │   └─ DialogTabFramework.tsx
+│       │   │   ├─ DialogAddAddress.tsx
+│       │   │   ├─ DialogAddCard.tsx
+│       │   │   ├─ DialogAuthentication.tsx
+│       │   │   ├─ DialogCreateApp.tsx
+│       │   │   ├─ DialogEditUserInfo.tsx
+│       │   │   ├─ DialogPricing.tsx
+│       │   │   ├─ DialogReferEarn.tsx
+│       │   │   └─ DialogShareProject.tsx
+│       │   ├─ faq
+│       │   │   ├─ FaqFooter.tsx
+│       │   │   ├─ FaqHeader.tsx
+│       │   │   └─ Faqs.tsx
+│       │   ├─ help-center
+│       │   │   ├─ article
+│       │   │   │   └─ index.tsx
+│       │   │   ├─ landing
+│       │   │   │   ├─ HelpCenterLandingArticlesOverview.tsx
+│       │   │   │   ├─ HelpCenterLandingFooter.tsx
+│       │   │   │   ├─ HelpCenterLandingHeader.tsx
+│       │   │   │   └─ HelpCenterLandingKnowledgeBase.tsx
+│       │   │   └─ subcategory
+│       │   │       └─ index.tsx
+│       │   ├─ misc
+│       │   │   └─ FooterIllustrations.tsx
+│       │   ├─ pricing
+│       │   │   ├─ PricingCTA.tsx
+│       │   │   ├─ PricingFooter.tsx
+│       │   │   ├─ PricingHeader.tsx
+│       │   │   ├─ PricingPlans.tsx
+│       │   │   └─ PricingTable.tsx
+│       │   ├─ user-profile
+│       │   │   ├─ connections
+│       │   │   │   └─ index.tsx
+│       │   │   ├─ profile
+│       │   │   │   ├─ AboutOverivew.tsx
+│       │   │   │   ├─ ActivityTimeline.tsx
+│       │   │   │   ├─ ConnectionsTeams.tsx
+│       │   │   │   ├─ index.tsx
+│       │   │   │   └─ ProjectsTable.tsx
+│       │   │   ├─ projects
+│       │   │   │   └─ index.tsx
+│       │   │   ├─ teams
+│       │   │   │   └─ index.tsx
+│       │   │   ├─ UserProfile.tsx
+│       │   │   └─ UserProfileHeader.tsx
+│       │   └─ wizard-examples
+│       │       ├─ checkout
+│       │       │   ├─ index.tsx
+│       │       │   ├─ StepAddress.tsx
+│       │       │   ├─ StepCart.tsx
+│       │       │   ├─ StepConfirmation.tsx
+│       │       │   └─ StepPayment.tsx
+│       │       ├─ create-deal
+│       │       │   ├─ index.tsx
+│       │       │   ├─ StepDealDetails.tsx
+│       │       │   ├─ StepDealType.tsx
+│       │       │   ├─ StepDealUsage.tsx
+│       │       │   └─ StepReview.tsx
+│       │       └─ property-listing
+│       │           ├─ index.tsx
+│       │           ├─ StepPersonalDetails.tsx
+│       │           ├─ StepPriceDetails.tsx
+│       │           ├─ StepPropertyArea.tsx
+│       │           ├─ StepPropertyDetails.tsx
+│       │           └─ StepPropertyFeatures.tsx
+│       ├─ table
+│       │   ├─ data-grid
+│       │   │   ├─ QuickSearchToolbar.tsx
+│       │   │   ├─ ServerSideToolbar.tsx
+│       │   │   ├─ TableBasic.tsx
+│       │   │   ├─ TableBasicSort.tsx
+│       │   │   ├─ TableColumns.tsx
+│       │   │   ├─ TableEditable.tsx
+│       │   │   ├─ TableFilter.tsx
+│       │   │   ├─ TableSelection.tsx
+│       │   │   └─ TableServerSide.tsx
+│       │   └─ mui
+│       │       ├─ TableBasic.tsx
+│       │       ├─ TableCollapsible.tsx
+│       │       ├─ TableCustomized.tsx
+│       │       ├─ TableDense.tsx
+│       │       ├─ TableSortSelect.tsx
+│       │       ├─ TableSpanning.tsx
+│       │       └─ TableStickyHeader.tsx
+│       └─ ui
+│           ├─ cards
+│           │   ├─ actions
+│           │   │   ├─ CardActionAll.tsx
+│           │   │   ├─ CardActionClose.tsx
+│           │   │   ├─ CardActionCollapse.tsx
+│           │   │   └─ CardActionRefresh.tsx
+│           │   ├─ advanced
+│           │   │   ├─ CardActiveProjects.tsx
+│           │   │   ├─ CardActivityTimeline.tsx
+│           │   │   ├─ CardBrowserStates.tsx
+│           │   │   ├─ CardCongratulationsJohn.tsx
+│           │   │   ├─ CardEarningReports.tsx
+│           │   │   ├─ CardLastTransaction.tsx
+│           │   │   ├─ CardMonthlyCampaignState.tsx
+│           │   │   ├─ CardOrders.tsx
+│           │   │   ├─ CardPopularProducts.tsx
+│           │   │   ├─ CardSalesByCountries.tsx
+│           │   │   ├─ CardSourceVisits.tsx
+│           │   │   ├─ CardTransactions.tsx
+│           │   │   └─ CardWebsiteAnalyticsSlider.tsx
+│           │   ├─ basic
+│           │   │   ├─ CardAppleWatch.tsx
+│           │   │   ├─ CardFacebook.tsx
+│           │   │   ├─ CardHorizontalRatings.tsx
+│           │   │   ├─ CardImgTop.tsx
+│           │   │   ├─ CardInfluencer.tsx
+│           │   │   ├─ CardLinkedIn.tsx
+│           │   │   ├─ CardMembership.tsx
+│           │   │   ├─ CardMobile.tsx
+│           │   │   ├─ CardNavigation.tsx
+│           │   │   ├─ CardNavigationCenter.tsx
+│           │   │   ├─ CardSupport.tsx
+│           │   │   ├─ CardTwitter.tsx
+│           │   │   ├─ CardUser.tsx
+│           │   │   ├─ CardVerticalRatings.tsx
+│           │   │   └─ CardWithCollapse.tsx
+│           │   ├─ statistics
+│           │   │   ├─ CardStatisticsAverageDailySales.tsx
+│           │   │   ├─ CardStatisticsAvgDailyTraffic.tsx
+│           │   │   ├─ CardStatisticsExpenses.tsx
+│           │   │   ├─ CardStatisticsGeneratedLeads.tsx
+│           │   │   ├─ CardStatisticsHorizontal.tsx
+│           │   │   ├─ CardStatisticsImpression.tsx
+│           │   │   ├─ CardStatisticsOrder.tsx
+│           │   │   ├─ CardStatisticsOrderVisits.tsx
+│           │   │   ├─ CardStatisticsProfit.tsx
+│           │   │   ├─ CardStatisticsRevenueGrowth.tsx
+│           │   │   ├─ CardStatisticsSales.tsx
+│           │   │   ├─ CardStatisticsSessions.tsx
+│           │   │   ├─ CardStatisticsSquare.tsx
+│           │   │   ├─ CardStatisticsStatistics.tsx
+│           │   │   ├─ CardStatisticsSubscribersOrders.tsx
+│           │   │   ├─ CardStatisticsVertical.tsx
+│           │   │   └─ CardStatisticsWithAreaChart.tsx
+│           │   └─ widgets
+│           │       ├─ CardWidgetsEarningReports.tsx
+│           │       ├─ CardWidgetsEarningReportsWithTabs.tsx
+│           │       ├─ CardWidgetsProjectStatus.tsx
+│           │       ├─ CardWidgetsRevenueReport.tsx
+│           │       ├─ CardWidgetsSales.tsx
+│           │       ├─ CardWidgetsSupportTracker.tsx
+│           │       └─ CardWidgetsTotalEarning.tsx
+│           └─ typography
+│               ├─ TypographyHeadings.tsx
+│               └─ TypographyTexts.tsx
+├─ styles
+├─ tsconfig.json
+└─ yarn.lock

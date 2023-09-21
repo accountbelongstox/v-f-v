@@ -1,0 +1,321 @@
+├─ src
+│   ├─ @core
+│   │   ├─ components
+│   │   │   ├─ auth
+│   │   │   ├─ card-snippet
+│   │   │   ├─ card-statistics
+│   │   │   │   ├─ card-stats-horizontal
+│   │   │   │   ├─ card-stats-horizontal-with-details
+│   │   │   │   ├─ card-stats-square
+│   │   │   │   ├─ card-stats-vertical
+│   │   │   │   ├─ card-stats-with-area-chart
+│   │   │   ├─ custom-checkbox
+│   │   │   │   ├─ basic
+│   │   │   │   ├─ icons
+│   │   │   │   ├─ image
+│   │   │   ├─ custom-radio
+│   │   │   │   ├─ basic
+│   │   │   │   ├─ icons
+│   │   │   │   ├─ image
+│   │   │   ├─ customizer
+│   │   │   ├─ icon
+│   │   │   ├─ mui
+│   │   │   │   ├─ autocomplete
+│   │   │   │   ├─ avatar
+│   │   │   │   ├─ badge
+│   │   │   │   ├─ chip
+│   │   │   │   ├─ text-field
+│   │   │   │   └─ timeline-dot
+│   │   │   ├─ option-menu
+│   │   │   ├─ page-header
+│   │   │   ├─ plan-details
+│   │   │   ├─ react-apexcharts
+│   │   │   ├─ react-draft-wysiwyg
+│   │   │   ├─ repeater
+│   │   │   ├─ scroll-to-top
+│   │   │   ├─ sidebar
+│   │   │   ├─ spinner
+│   │   │   └─ window-wrapper
+│   │   ├─ context
+│   │   ├─ hooks
+│   │   ├─ layouts
+│   │   │   ├─ components
+│   │   │   │   ├─ blank-layout-with-appBar
+│   │   │   │   ├─ horizontal
+│   │   │   │   │   ├─ app-bar-content
+│   │   │   │   │   └─ navigation
+│   │   │   │   ├─ shared-components
+│   │   │   │   │   ├─ footer
+│   │   │   │   └─ vertical
+│   │   │   │       ├─ appBar
+│   │   │   │       └─ navigation
+│   │   ├─ styles
+│   │   │   ├─ libs
+│   │   │   │   ├─ fullcalendar
+│   │   │   │   ├─ keen-slider
+│   │   │   │   ├─ react-apexcharts
+│   │   │   │   ├─ react-cleave
+│   │   │   │   ├─ react-credit-cards
+│   │   │   │   ├─ react-datepicker
+│   │   │   │   ├─ react-draft-wysiwyg
+│   │   │   │   ├─ react-dropzone
+│   │   │   │   ├─ react-hot-toast
+│   │   │   │   └─ recharts
+│   │   │   └─ mui
+│   │   ├─ theme
+│   │   │   ├─ breakpoints
+│   │   │   ├─ overrides
+│   │   │   ├─ palette
+│   │   │   ├─ shadows
+│   │   │   ├─ spacing
+│   │   │   └─ typography
+│   │   └─ utils
+│   ├─ @fake-db
+│   │   ├─ app-bar-search
+│   │   ├─ apps
+│   │   ├─ auth
+│   │   ├─ autocomplete
+│   │   ├─ cards
+│   │   ├─ components
+│   │   ├─ iconify-icons
+│   │   ├─ pages
+│   │   ├─ server-side-menu
+│   │   ├─ table
+│   ├─ configs
+│   ├─ context
+│   ├─ hooks
+│   ├─ iconify-bundle
+│   │   ├─ svg
+│   ├─ layouts
+│   │   ├─ components
+│   │   │   ├─ acl
+│   │   │   ├─ horizontal
+│   │   │   └─ vertical
+│   ├─ navigation
+│   │   ├─ horizontal
+│   │   └─ vertical
+│   ├─ pages
+│   │   ├─ acl
+│   │   ├─ apps
+│   │   │   ├─ calendar
+│   │   │   ├─ chat
+│   │   │   ├─ email
+│   │   │   │   ├─ label
+│   │   │   ├─ invoice
+│   │   │   │   ├─ add
+│   │   │   │   ├─ edit
+│   │   │   │   ├─ list
+│   │   │   │   ├─ preview
+│   │   │   │   └─ print
+│   │   │   ├─ permissions
+│   │   │   ├─ roles
+│   │   │   └─ user
+│   │   │       ├─ list
+│   │   │       └─ view
+│   │   ├─ charts
+│   │   │   ├─ apex-charts
+│   │   │   ├─ chartjs
+│   │   │   └─ recharts
+│   │   ├─ components
+│   │   │   ├─ accordion
+│   │   │   ├─ alerts
+│   │   │   ├─ avatars
+│   │   │   ├─ badges
+│   │   │   ├─ button-group
+│   │   │   ├─ buttons
+│   │   │   ├─ chips
+│   │   │   ├─ dialogs
+│   │   │   ├─ list
+│   │   │   ├─ menu
+│   │   │   ├─ more
+│   │   │   ├─ pagination
+│   │   │   ├─ progress
+│   │   │   ├─ ratings
+│   │   │   ├─ snackbar
+│   │   │   ├─ swiper
+│   │   │   ├─ tabs
+│   │   │   ├─ timeline
+│   │   │   ├─ toast
+│   │   │   └─ tree-view
+│   │   ├─ dashboards
+│   │   │   ├─ analytics
+│   │   │   ├─ crm
+│   │   │   ├─ ecommerce
+│   │   │   └─ mui-test
+│   │   ├─ forgot-password
+│   │   ├─ forms
+│   │   │   ├─ form-elements
+│   │   │   │   ├─ autocomplete
+│   │   │   │   ├─ checkbox
+│   │   │   │   ├─ custom-inputs
+│   │   │   │   ├─ editor
+│   │   │   │   ├─ file-uploader
+│   │   │   │   ├─ input-mask
+│   │   │   │   ├─ pickers
+│   │   │   │   ├─ radio
+│   │   │   │   ├─ select
+│   │   │   │   ├─ slider
+│   │   │   │   ├─ switch
+│   │   │   │   ├─ text-field
+│   │   │   │   └─ textarea
+│   │   │   ├─ form-layouts
+│   │   │   ├─ form-validation
+│   │   │   └─ form-wizard
+│   │   ├─ login
+│   │   ├─ pages
+│   │   │   ├─ account-settings
+│   │   │   ├─ auth
+│   │   │   │   ├─ forgot-password-v1
+│   │   │   │   ├─ forgot-password-v2
+│   │   │   │   ├─ login-v1
+│   │   │   │   ├─ login-v2
+│   │   │   │   ├─ login-with-appbar
+│   │   │   │   ├─ register-multi-steps
+│   │   │   │   ├─ register-v1
+│   │   │   │   ├─ register-v2
+│   │   │   │   ├─ reset-password-v1
+│   │   │   │   ├─ reset-password-v2
+│   │   │   │   ├─ two-steps-v1
+│   │   │   │   ├─ two-steps-v2
+│   │   │   │   ├─ verify-email-v1
+│   │   │   │   └─ verify-email-v2
+│   │   │   ├─ dialog-examples
+│   │   │   ├─ faq
+│   │   │   ├─ help-center
+│   │   │   │   └─ [category]
+│   │   │   │       └─ [subcategory]
+│   │   │   ├─ misc
+│   │   │   │   ├─ 401-not-authorized
+│   │   │   │   ├─ 404-not-found
+│   │   │   │   ├─ 500-server-error
+│   │   │   │   ├─ coming-soon
+│   │   │   │   └─ under-maintenance
+│   │   │   ├─ pricing
+│   │   │   ├─ user-profile
+│   │   │   └─ wizard-examples
+│   │   │       ├─ checkout
+│   │   │       ├─ create-deal
+│   │   │       └─ property-listing
+│   │   ├─ register
+│   │   ├─ tables
+│   │   │   ├─ data-grid
+│   │   │   └─ mui
+│   │   ├─ ui
+│   │   │   ├─ cards
+│   │   │   │   ├─ actions
+│   │   │   │   ├─ advanced
+│   │   │   │   ├─ basic
+│   │   │   │   ├─ statistics
+│   │   │   │   └─ widgets
+│   │   │   ├─ icons
+│   │   │   └─ typography
+│   ├─ store
+│   │   ├─ apps
+│   │   │   ├─ calendar
+│   │   │   ├─ chat
+│   │   │   ├─ email
+│   │   │   ├─ invoice
+│   │   │   ├─ permissions
+│   │   │   └─ user
+│   ├─ types
+│   │   ├─ apps
+│   │   └─ forms
+│   └─ views
+│       ├─ apps
+│       │   ├─ calendar
+│       │   ├─ chat
+│       │   ├─ email
+│       │   ├─ invoice
+│       │   │   ├─ add
+│       │   │   ├─ edit
+│       │   │   ├─ list
+│       │   │   ├─ preview
+│       │   │   ├─ print
+│       │   │   └─ shared-drawer
+│       │   ├─ permissions
+│       │   ├─ roles
+│       │   └─ user
+│       │       ├─ list
+│       │       └─ view
+│       ├─ charts
+│       │   ├─ apex-charts
+│       │   ├─ chartjs
+│       │   └─ recharts
+│       ├─ components
+│       │   ├─ accordion
+│       │   ├─ alerts
+│       │   ├─ avatars
+│       │   ├─ badges
+│       │   ├─ button-group
+│       │   ├─ buttons
+│       │   ├─ chips
+│       │   ├─ dialogs
+│       │   ├─ list
+│       │   ├─ menu
+│       │   ├─ pagination
+│       │   ├─ progress
+│       │   ├─ ratings
+│       │   ├─ snackbar
+│       │   ├─ swiper
+│       │   ├─ tabs
+│       │   ├─ timeline
+│       │   ├─ toast
+│       │   └─ tree-view
+│       ├─ dashboards
+│       │   ├─ analytics
+│       │   ├─ crm
+│       │   └─ ecommerce
+│       ├─ forms
+│       │   ├─ form-elements
+│       │   │   ├─ autocomplete
+│       │   │   ├─ checkbox
+│       │   │   ├─ custom-inputs
+│       │   │   ├─ editor
+│       │   │   ├─ file-uploader
+│       │   │   ├─ input-mask
+│       │   │   ├─ pickers
+│       │   │   ├─ radio
+│       │   │   ├─ select
+│       │   │   ├─ slider
+│       │   │   ├─ switch
+│       │   │   ├─ text-field
+│       │   │   └─ textarea
+│       │   ├─ form-layouts
+│       │   ├─ form-validation
+│       │   └─ form-wizard
+│       ├─ pages
+│       │   ├─ account-settings
+│       │   │   ├─ billing
+│       │   │   ├─ security
+│       │   ├─ auth
+│       │   │   └─ register-multi-steps
+│       │   ├─ dialog-examples
+│       │   │   ├─ create-app-tabs
+│       │   ├─ faq
+│       │   ├─ help-center
+│       │   │   ├─ article
+│       │   │   ├─ landing
+│       │   │   └─ subcategory
+│       │   ├─ misc
+│       │   ├─ pricing
+│       │   ├─ user-profile
+│       │   │   ├─ connections
+│       │   │   ├─ profile
+│       │   │   ├─ projects
+│       │   │   ├─ teams
+│       │   └─ wizard-examples
+│       │       ├─ checkout
+│       │       ├─ create-deal
+│       │       └─ property-listing
+│       ├─ table
+│       │   ├─ data-grid
+│       │   └─ mui
+│       └─ ui
+│           ├─ cards
+│           │   ├─ actions
+│           │   ├─ advanced
+│           │   ├─ basic
+│           │   ├─ statistics
+│           │   └─ widgets
+│           └─ typography
+├─ styles
